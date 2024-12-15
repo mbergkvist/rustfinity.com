@@ -22,7 +22,7 @@ COPY crates/rustfinity-runner/docker/Cargo.toml Cargo.toml
 
 RUN cargo new challenges/playground && rm -rf challenges/playground/.git
 # Add packages
-RUN cd challenges/playground && cargo add chrono@0.4
+RUN cd challenges/playground && cargo add chrono@0.4 trybuild@1.0
 
 RUN cargo build
 
